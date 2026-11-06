@@ -1,6 +1,6 @@
 # ERDI laser rangefinder on ESP32 with MicroPython
 
-[![ci](https://github.com/Tommyapi/erdi-lrf-esp32-micropython/actions/workflows/ci.yml/badge.svg)](https://github.com/Tommyapi/erdi-lrf-esp32-micropython/actions/workflows/ci.yml)
+[![ci](https://github.com/ErdiTech/erdi-lrf-esp32-micropython/actions/workflows/ci.yml/badge.svg)](https://github.com/ErdiTech/erdi-lrf-esp32-micropython/actions/workflows/ci.yml)
 
 A single-file **MicroPython driver for ERDI 905 nm laser rangefinder modules on ESP32**, Raspberry Pi Pico (RP2040) and STM32 boards. It reads the **LRF22VB / LRF50VB / LRF50H-LRF1500H** 460800-baud `5C` stream and polls the **LR1000E2 ... LR2000E4, LRF1200A1, LRF3000A1, SPD1200N\*** `55 AA` single-shot modules. Use it for a **laser distance sensor on ESP32**, a **UART lidar rangefinder** with MicroPython, drone altitude hold experiments, robot obstacle sensing and level measurement.
 
@@ -13,7 +13,7 @@ A single-file **MicroPython driver for ERDI 905 nm laser rangefinder modules on 
 ```python
 # on the board, with Wi-Fi up
 import mip
-mip.install("github:Tommyapi/erdi-lrf-esp32-micropython")
+mip.install("github:ErdiTech/erdi-lrf-esp32-micropython")
 ```
 
 or copy `erdi_lrf.py` to the board with `mpremote cp erdi_lrf.py :`.
@@ -67,8 +67,8 @@ The tests use the golden frames printed in the manuals. They do not replace a be
 ## Related projects
 
 - [ErdiTech/erdi-lrf-drivers](https://github.com/ErdiTech/erdi-lrf-drivers): Python, Arduino and ROS 2 drivers, protocol documents
-- [laser-rangefinder-module-database](https://github.com/Tommyapi/laser-rangefinder-module-database): open dataset of laser rangefinder module specifications
-- [lrf-uart-protocol-decoder](https://github.com/Tommyapi/lrf-uart-protocol-decoder): browser and Python UART frame decoder
+- [laser-rangefinder-module-database](https://github.com/ErdiTech/laser-rangefinder-module-database): open dataset of laser rangefinder module specifications
+- [lrf-uart-protocol-decoder](https://github.com/ErdiTech/lrf-uart-protocol-decoder): browser and Python UART frame decoder
 
 ## Support / 打赏
 
