@@ -2,6 +2,8 @@
 
 [![ci](https://github.com/ErdiTech/erdi-lrf-esp32-micropython/actions/workflows/ci.yml/badge.svg)](https://github.com/ErdiTech/erdi-lrf-esp32-micropython/actions/workflows/ci.yml)
 
+Datasheets and public prices are on the [LRF22VB page](https://erdilrf.com/models/lrf22vb/?utm_source=github&utm_medium=readme&utm_campaign=erdi-lrf-esp32-micropython) and in the [full ERDI laser rangefinder model list](https://erdilrf.com/models/?utm_source=github&utm_medium=readme&utm_campaign=erdi-lrf-esp32-micropython).
+
 A single-file **MicroPython driver for ERDI 905 nm laser rangefinder modules on ESP32**, Raspberry Pi Pico (RP2040) and STM32 boards. It reads the **LRF22VB / LRF50VB / LRF50H-LRF1500H** 460800-baud `5C` stream and polls the **LR1000E2 ... LR2000E4, LRF1200A1, LRF3000A1, SPD1200N\*** `55 AA` single-shot modules. Use it for a **laser distance sensor on ESP32**, a **UART lidar rangefinder** with MicroPython, drone altitude hold experiments, robot obstacle sensing and level measurement.
 
 - One file, no dependencies: [`erdi_lrf.py`](erdi_lrf.py)
